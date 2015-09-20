@@ -780,10 +780,22 @@ article footer .addthis iframe {
   padding-right: 10px;
   font-family: FontAwesome;
 }
+#pagination .next {
+  display: block;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+  padding: 0;
+  float: right;
+  clear: right;
+}
 #pagination .next:after {
   content: '\f054';
   padding-left: 10px;
   font-family: FontAwesome;
+}
+#pagination .next .img-topic {
+  max-width: 300px;
+  max-height: 1800px;
 }
 .archive-title {
   color: #777;
