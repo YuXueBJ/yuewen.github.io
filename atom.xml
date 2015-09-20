@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[书生博客]]></title>
+  <title><![CDATA[钰雪博客]]></title>
   <subtitle><![CDATA[合抱之木，生于毫末;百丈之台，起于垒土;千里之行，始于足下.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>

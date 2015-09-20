@@ -945,34 +945,50 @@ article footer .addthis iframe {
 #sidebar .search input:focus {
   color: #000;
 }
-#sidebar .tag small {
+.archive-list {
+  font-size: 0.9em;
+  padding: 15px 20px;
+}
+.archive-list .archive-list-count {
+  margin-left: 20px;
+  padding: 15px 20px;
+  font-size: 0.8em;
+  color: #777;
+}
+.archive-list:before {
+  content: '-';
+}
+.archive-list:after {
+  content: '-';
+}
+.tag small {
   margin-left: 15px;
   color: #777;
 }
-#sidebar .tag small:before {
+.tag small:before {
   content: '(';
 }
-#sidebar .tag small:after {
+.tag small:after {
   content: ')';
 }
-#sidebar .twitter li {
+.twitter li {
   border-bottom: 1px solid #ddd;
   padding: 15px 20px;
   font-size: 0.9em;
 }
-#sidebar .twitter li:last-of-type {
+.twitter li:last-of-type {
   border-bottom: none;
 }
-#sidebar .twitter small {
+.twitter small {
   display: block;
   margin-top: 10px;
   color: #777;
   line-height: 1;
 }
-#sidebar .tagcloud .entry {
+.tagcloud .entry {
   padding-right: 5px;
 }
-#sidebar .tagcloud a {
+.tagcloud a {
   margin-right: 10px;
   display: inline-block;
 }
@@ -1060,17 +1076,6 @@ article footer .addthis iframe {
     width: 75%;
   }
 }
-.archive-list,
-font-size 0.9em,
-padding 15px 20px,
-.archive-list-count,
-margin-left 8px,
-font-size 0.8em,
-color color-meta,
-:before,
-content '(',
-:after,
-content ')',
 .social-list {
   width: 100%;
   margin: 50 auto;
@@ -1079,17 +1084,6 @@ content ')',
   text-align: center;
 }
 @media only screen and (min-width: 1024px) {
-  .archive-list,
-  font-size 0.9em,
-  padding 15px 20px,
-  .archive-list-count,
-  margin-left 8px,
-  font-size 0.8em,
-  color color-meta,
-  :before,
-  content '(',
-  :after,
-  content ')',
   .social-list {
     float: none;
     width: auto;
@@ -1097,17 +1091,6 @@ content ')',
     backgroun: #343434;
   }
 }
-.archive-list a,
-font-size 0.9em a,
-padding 15px 20px a,
-.archive-list-count a,
-margin-left 8px a,
-font-size 0.8em a,
-color color-meta a,
-:before a,
-content '(' a,
-:after a,
-content ')' a,
 .social-list a {
   display: inline-block;
   color: #343434;
@@ -1115,17 +1098,6 @@ content ')' a,
   margin: 0.5em;
 }
 @media only screen and (min-width: 768px) {
-  .archive-list a,
-  font-size 0.9em a,
-  padding 15px 20px a,
-  .archive-list-count a,
-  margin-left 8px a,
-  font-size 0.8em a,
-  color color-meta a,
-  :before a,
-  content '(' a,
-  :after a,
-  content ')' a,
   .social-list a {
     float: none;
     margin: 0;
@@ -1133,166 +1105,34 @@ content ')' a,
   }
 }
 @media only screen and (min-width: 1024px) {
-  .archive-list a,
-  font-size 0.9em a,
-  padding 15px 20px a,
-  .archive-list-count a,
-  margin-left 8px a,
-  font-size 0.8em a,
-  color color-meta a,
-  :before a,
-  content '(' a,
-  :after a,
-  content ')' a,
   .social-list a {
     float: none;
     padding: 0.3em;
   }
 }
-.archive-list a:hover:before,
-font-size 0.9em a:hover:before,
-padding 15px 20px a:hover:before,
-.archive-list-count a:hover:before,
-margin-left 8px a:hover:before,
-font-size 0.8em a:hover:before,
-color color-meta a:hover:before,
-:before a:hover:before,
-content '(' a:hover:before,
-:after a:hover:before,
-content ')' a:hover:before,
 .social-list a:hover:before {
   color: #2ca6cb;
 }
-.archive-list a[title="weibo"]::before,
-font-size 0.9em a[title="weibo"]::before,
-padding 15px 20px a[title="weibo"]::before,
-.archive-list-count a[title="weibo"]::before,
-margin-left 8px a[title="weibo"]::before,
-font-size 0.8em a[title="weibo"]::before,
-color color-meta a[title="weibo"]::before,
-:before a[title="weibo"]::before,
-content '(' a[title="weibo"]::before,
-:after a[title="weibo"]::before,
-content ')' a[title="weibo"]::before,
 .social-list a[title="weibo"]::before,
-.archive-list a[title="twitter"]::before,
-font-size 0.9em a[title="twitter"]::before,
-padding 15px 20px a[title="twitter"]::before,
-.archive-list-count a[title="twitter"]::before,
-margin-left 8px a[title="twitter"]::before,
-font-size 0.8em a[title="twitter"]::before,
-color color-meta a[title="twitter"]::before,
-:before a[title="twitter"]::before,
-content '(' a[title="twitter"]::before,
-:after a[title="twitter"]::before,
-content ')' a[title="twitter"]::before,
 .social-list a[title="twitter"]::before,
-.archive-list a[title="github"]::before,
-font-size 0.9em a[title="github"]::before,
-padding 15px 20px a[title="github"]::before,
-.archive-list-count a[title="github"]::before,
-margin-left 8px a[title="github"]::before,
-font-size 0.8em a[title="github"]::before,
-color color-meta a[title="github"]::before,
-:before a[title="github"]::before,
-content '(' a[title="github"]::before,
-:after a[title="github"]::before,
-content ')' a[title="github"]::before,
 .social-list a[title="github"]::before,
-.archive-list a[title="facebook"]::before,
-font-size 0.9em a[title="facebook"]::before,
-padding 15px 20px a[title="facebook"]::before,
-.archive-list-count a[title="facebook"]::before,
-margin-left 8px a[title="facebook"]::before,
-font-size 0.8em a[title="facebook"]::before,
-color color-meta a[title="facebook"]::before,
-:before a[title="facebook"]::before,
-content '(' a[title="facebook"]::before,
-:after a[title="facebook"]::before,
-content ')' a[title="facebook"]::before,
 .social-list a[title="facebook"]::before,
-.archive-list a[title="zhihu"]::before,
-font-size 0.9em a[title="zhihu"]::before,
-padding 15px 20px a[title="zhihu"]::before,
-.archive-list-count a[title="zhihu"]::before,
-margin-left 8px a[title="zhihu"]::before,
-font-size 0.8em a[title="zhihu"]::before,
-color color-meta a[title="zhihu"]::before,
-:before a[title="zhihu"]::before,
-content '(' a[title="zhihu"]::before,
-:after a[title="zhihu"]::before,
-content ')' a[title="zhihu"]::before,
 .social-list a[title="zhihu"]::before {
   font-family: FontAwesome;
   -webkit-font-smoothing: ;
 }
-.archive-list a[title="weibo"]::before,
-font-size 0.9em a[title="weibo"]::before,
-padding 15px 20px a[title="weibo"]::before,
-.archive-list-count a[title="weibo"]::before,
-margin-left 8px a[title="weibo"]::before,
-font-size 0.8em a[title="weibo"]::before,
-color color-meta a[title="weibo"]::before,
-:before a[title="weibo"]::before,
-content '(' a[title="weibo"]::before,
-:after a[title="weibo"]::before,
-content ')' a[title="weibo"]::before,
 .social-list a[title="weibo"]::before {
   content: "\f18a";
 }
-.archive-list a[title="twitter"]::before,
-font-size 0.9em a[title="twitter"]::before,
-padding 15px 20px a[title="twitter"]::before,
-.archive-list-count a[title="twitter"]::before,
-margin-left 8px a[title="twitter"]::before,
-font-size 0.8em a[title="twitter"]::before,
-color color-meta a[title="twitter"]::before,
-:before a[title="twitter"]::before,
-content '(' a[title="twitter"]::before,
-:after a[title="twitter"]::before,
-content ')' a[title="twitter"]::before,
 .social-list a[title="twitter"]::before {
   content: "\f099";
 }
-.archive-list a[title="github"]::before,
-font-size 0.9em a[title="github"]::before,
-padding 15px 20px a[title="github"]::before,
-.archive-list-count a[title="github"]::before,
-margin-left 8px a[title="github"]::before,
-font-size 0.8em a[title="github"]::before,
-color color-meta a[title="github"]::before,
-:before a[title="github"]::before,
-content '(' a[title="github"]::before,
-:after a[title="github"]::before,
-content ')' a[title="github"]::before,
 .social-list a[title="github"]::before {
   content: "\f09b";
 }
-.archive-list a[title="facebook"]::before,
-font-size 0.9em a[title="facebook"]::before,
-padding 15px 20px a[title="facebook"]::before,
-.archive-list-count a[title="facebook"]::before,
-margin-left 8px a[title="facebook"]::before,
-font-size 0.8em a[title="facebook"]::before,
-color color-meta a[title="facebook"]::before,
-:before a[title="facebook"]::before,
-content '(' a[title="facebook"]::before,
-:after a[title="facebook"]::before,
-content ')' a[title="facebook"]::before,
 .social-list a[title="facebook"]::before {
   content: "\f09a";
 }
-.archive-list a[title="zhihu"]::before,
-font-size 0.9em a[title="zhihu"]::before,
-padding 15px 20px a[title="zhihu"]::before,
-.archive-list-count a[title="zhihu"]::before,
-margin-left 8px a[title="zhihu"]::before,
-font-size 0.8em a[title="zhihu"]::before,
-color color-meta a[title="zhihu"]::before,
-:before a[title="zhihu"]::before,
-content '(' a[title="zhihu"]::before,
-:after a[title="zhihu"]::before,
-content ')' a[title="zhihu"]::before,
 .social-list a[title="zhihu"]::before {
   content: "\f1d6";
 }
