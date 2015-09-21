@@ -4,7 +4,7 @@
   <subtitle><![CDATA[合抱之木，生于毫末;百丈之台，起于垒土;千里之行，始于足下.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-09-21T04:07:33.000Z</updated>
+  <updated>2015-09-21T06:07:55.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Objective-C 基础知识]]></title>
+    <link href="http://yoursite.com/2015/09/21/Object-C%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>http://yoursite.com/2015/09/21/Object-C 基础知识/</id>
+    <published>2015-09-21T06:04:25.000Z</published>
+    <updated>2015-09-21T06:07:55.000Z</updated>
+    <content type="html"><![CDATA[<p>Objective-C运行时定义了几种重要的类型。</p>
+<p>Class：定义Objective-C类</p>
+<p>Ivar：定义对象的实例变量，包括类型和名字。</p>
+<p>Protocol：定义正式协议。</p>
+<p>objc_property_t：定义属性。叫这个名字可能是为了防止和Objective-C 1.0中的用户类型冲突，那时候还没有属性。</p>
+<p>Method：定义对象方法或类方法。这个类型提供了方法的名字（就是<strong>选择器</strong>）、参数数量和类型，以及返回值（这些信息合起来称为方法的<strong>签名</strong>），还有一个指向代码的函数指针（也就是方法的<strong>实现</strong>）。</p>
+<p>SEL：定义选择器。选择器是方法名的唯一标识符。</p>
+<p>IMP：定义方法实现。这只是一个指向某个函数的指针，该函数接受一个对象、一个选择器和一个可变长参数列表（varargs），返回一个对象</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Objective-C运行时定义了几种重要的类型。</p>
+<p>Class：定义Objective-C类</p>
+<p>Ivar：定义对象的实例变量，包括类型和名字。</p>
+<p>Protocol：定义正式协议。</p>
+<p>objc_property_t：定义属性。]]>
+    </summary>
+    
+      <category term="Object-C" scheme="http://yoursite.com/tags/Object-C/"/>
+    
+      <category term="Objective-C 基础" scheme="http://yoursite.com/categories/Objective-C-%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[git 命令全集]]></title>
@@ -173,7 +202,7 @@
     <link href="http://yoursite.com/2015/09/17/--iOS%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83--/"/>
     <id>http://yoursite.com/2015/09/17/--iOS高级编程规范--/</id>
     <published>2015-09-17T09:56:25.000Z</published>
-    <updated>2015-09-21T04:08:16.000Z</updated>
+    <updated>2015-09-21T04:14:32.000Z</updated>
     <content type="html"><![CDATA[<hr>
 <h1 id="iOS高级编程规范">iOS高级编程规范</h1><ul>
 <li><a href="#1">iOS架构设计与分层</a> </li>
