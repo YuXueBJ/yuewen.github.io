@@ -1,111 +1,106 @@
-<!DOCTYPE html>
+
+
+<!DOCTYPE HTML>
 <html>
 <head>
   <meta charset="utf-8">
+  <script type="text/javascript" src="http://tajs.qq.com/stats?sId=44218032" charset="UTF-8"></script>
+  <script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?74dbbfc4a69dc7b0b442194618141042";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
   
   <title>git 命令全集 | 钰雪博客</title>
+  <meta name="author" content="朱洪伟">
+  
+  <meta name="description" content="钰雪研发技术博客">
+  
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Git 是一个很强大的分布式版本控制系统。它不但适用于管理大型开源软件的源代码，管理私人的文档和源代码也有很多优势。　　本来想着只把最有用、最常用的 Git 命令记下来，但是总觉得这个也挺有用、那个也用得着，结果越记越多。
-　　
-远程仓库相关命令检出仓库：    $ git clone git://github.com/jquery/jquery.git
-查看远程仓库：$ git remote -">
-<meta property="og:type" content="article">
-<meta property="og:title" content="git 命令全集">
-<meta property="og:url" content="http://yoursite.com/2015/09/21/git 命令/index.html">
-<meta property="og:site_name" content="钰雪博客">
-<meta property="og:description" content="Git 是一个很强大的分布式版本控制系统。它不但适用于管理大型开源软件的源代码，管理私人的文档和源代码也有很多优势。　　本来想着只把最有用、最常用的 Git 命令记下来，但是总觉得这个也挺有用、那个也用得着，结果越记越多。
-　　
-远程仓库相关命令检出仓库：    $ git clone git://github.com/jquery/jquery.git
-查看远程仓库：$ git remote -">
-<meta property="og:updated_time" content="2015-09-21T09:18:35.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git 命令全集">
-<meta name="twitter:description" content="Git 是一个很强大的分布式版本控制系统。它不但适用于管理大型开源软件的源代码，管理私人的文档和源代码也有很多优势。　　本来想着只把最有用、最常用的 Git 命令记下来，但是总觉得这个也挺有用、那个也用得着，结果越记越多。
-　　
-远程仓库相关命令检出仓库：    $ git clone git://github.com/jquery/jquery.git
-查看远程仓库：$ git remote -">
-<meta name="twitter:creator" content="@https://twitter.com/your-user-name">
-  
-  
 
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
-  
-  
-  
-
+  <meta property="og:title" content="git 命令全集"/>
+  <meta property="og:site_name" content="钰雪博客"/>
 
   
+    <meta property="og:image" content="undefined"/>
+  
 
-  
-    <link href='//fonts.useso.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
-    <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
+  <link href="/imgs/favicon.png" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="钰雪博客" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+
 </head>
 
+
 <body>
-  <div id="wrap">
-    <header id="header">
-  <div id="header-outer" class="outer">
-    <div class="container">
-      <div class="container-inner">
-        <div id="header-title">
-          <h1 class="logo-wrap">
-            <a href="/" class="logo"></a>
-          </h1>
-          
-            <h2 class="subtitle-wrap">
-              <p class="subtitle">合抱之木，生于毫末;百丈之台，起于垒土;千里之行，始于足下.</p>
-            </h2>
-          
-        </div>
-        <div id="header-inner" class="nav-container">
-          <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
-          <div class="nav-container-inner">
-            <ul id="main-nav">
-              
-            </ul>
-            <nav id="sub-nav">
-              <div id="search-form-wrap">
-                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="搜索"><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <header><div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/imgs/logo.png" alt="钰雪博客" title="钰雪博客"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name">钰雪博客</h1>
+				<h2 class="blog-motto">合抱之木，生于毫末;百丈之台，起于垒土;千里之行，始于足下.</h2>
+			</div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">目录</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li> <a href="/atom.xml">RSS</a> </li>
+				</ul>
+			</nav>
+</div>
 </header>
-    <div class="container">
-      <div class="main-body container-inner">
-        <div class="main-body-inner">
-          <section id="main">
-            <div class="main-body-header">
-
-              <h1 class="header"><a class="page-title-link" href="/categories/命令/">命令</a></h1>
-            </div>
-            <div class="main-body-content">
-              
-  <article id="post-git 命令" class="article article-single article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-      <!--  -->
-      
-        <header class="article-header">
-          
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
-    <h1 class="article-title" itemprop="name">
-      git 命令全集
-    </h1>
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
   
-
-        </header>
-      
-      <p class="article-byline">
-        <a href="/2015/09/21/git 命令/" class="article-date">
-  <time datetime="2015-09-21T03:37:02.000Z" itemprop="datePublished">2015年09月21</time>
-</a>
-      </p>
-      <div class="article-entry" itemprop="articleBody">
+  <div class="post-content">
+    <header class="article-info clearfix">
+  <h1 itemprop="name">
+	git 命令全集
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://yoursite.com" title="朱洪伟">朱洪伟</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2015-09-21T03:37:02.000Z" itemprop="datePublished">2015年09月21</time>
+    更新日期:<time datetime="2015-09-21T09:18:35.000Z" itemprop="dateModified">2015年09月21</time>
+    
+  </p>
+</header>
+    <div class="entry">
+		
+			<div id="toc" class="toc-article">
+				<strong class="toc-title">文章目录</strong>
+				<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#远程仓库相关命令"><span class="toc-number">1.</span> <span class="toc-text">远程仓库相关命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分支(branch)操作相关命令"><span class="toc-number">2.</span> <span class="toc-text">分支(branch)操作相关命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#版本(tag)操作相关命令"><span class="toc-number">3.</span> <span class="toc-text">版本(tag)操作相关命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#子模块(submodule)相关操作命令"><span class="toc-number">4.</span> <span class="toc-text">子模块(submodule)相关操作命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#忽略一些文件、文件夹不提交"><span class="toc-number">5.</span> <span class="toc-text">忽略一些文件、文件夹不提交</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Git_常用命令"><span class="toc-number"></span> <span class="toc-text">Git 常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#git_stash_pop_将文件从临时空间pop下来"><span class="toc-number">1.</span> <span class="toc-text">git stash pop 将文件从临时空间pop下来</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git_push_origin_master_将本地项目给提交到服务器中"><span class="toc-number">2.</span> <span class="toc-text">git push origin master 将本地项目给提交到服务器中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git_pull_本地与服务器端同步"><span class="toc-number">3.</span> <span class="toc-text">git pull 本地与服务器端同步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git_push_origin_serverfix:awesomebranch"><span class="toc-number">4.</span> <span class="toc-text">git push origin serverfix:awesomebranch</span></a></li></ol>
+			</div>
+		
         <p>　Git 是一个很强大的分布式版本控制系统。它不但适用于管理大型开源软件的源代码，管理私人的文档和源代码也有很多优势。<br>　<br>　本来想着只把最有用、最常用的 Git 命令记下来，但是总觉得这个也挺有用、那个也用得着，结果越记越多。
 　　</p>
 <h2 id="远程仓库相关命令">远程仓库相关命令</h2><p>检出仓库：    $ git clone git://github.com/jquery/jquery.git</p>
@@ -202,88 +197,234 @@
 <hr>
 <p>mkdir WebApp<br>cd WebApp<br>git init<br>touch README<br>git add README<br>git commit -m ‘first commit’<br>git remote add origin git@github.com:daixu/WebApp.git<br>git push -u origin master</p>
 
-      </div>
-      <footer class="article-footer">
-        <a data-url="http://yoursite.com/2015/09/21/git 命令/" data-id="ciev13d5y00078ehs83486r8y" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-        
-        
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
-
-      </footer>
     </div>
-  </article>
+    <footer>
+        
   
-  
-
-            </div>
-          </section>
-          <aside id="sidebar">
-  <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
-  <div class="sidebar-top">
-    <p>关注我 :</p>
-    <ul class="social-links">
-      
-    </ul>
+  <div class="categories">
+    <a href="/categories/命令/">命令</a>
   </div>
+
+        
   
+  <div class="tags">
+    <a href="/tags/git/">git</a>
+  </div>
+
+		<div class="bdsharebuttonbox">
+	<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+	<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+	<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+	<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="bds_more" data-cmd="more"></a>
+	<a href="#" class="bds_count" data-cmd="count"></a>
+</div>
+<script>
+window._bd_share_config=
+{
+	"common":{
+		"bdSnsKey":{},
+		"bdText":"",
+		"bdMini":"2",
+		"bdMiniList":false,
+		"bdPic":"",
+		"bdStyle":"0",
+		"bdSize":"24"
+	},
+	"share":{},
+	"image":{
+		"viewList":["qzone","tsina","tqq","renren","weixin","fbook","twi"],
+		"viewText":"分享到：",
+		"viewSize":"24"
+	},
+	"selectShare":{
+		"bdContainerClass":null,
+		"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","fbook","twi"]
+	}
+};
+with(document)0[
+	(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)
+];
+</script>    
+        <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+ <nav id="pagination" >
     
-<nav id="article-nav">
-  
-    <a href="/2015/09/21/Object-C 基础知识/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <p class="article-nav-title">
-        
-          Objective-C 基础知识
-        
-      </p>
-      <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
-  
-  
-    <a href="/2015/09/20/此路不通彼路通/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <p class="article-nav-title">此路不通彼路通</p>
-      <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
-    </a>
-  
+    <a href="/2015/09/21/iPone6s与iOS9/" class="alignleft prev" title="iPone6s与iOS9 的事">iPone6s与iOS9 的事</a>
+    
+    
+    <a href="/2015/09/20/此路不通彼路通/" class="alignright next" title="此路不通彼路通">此路不通彼路通</a>
+    
+    <div class="clearfix"></div>
 </nav>
 
+
+
+	
+	<section id="comment">
+		<!-- 多说评论框 start -->
+		<div class="ds-thread" data-thread-key="2015/09/21/git 命令/" data-title="git 命令全集" data-url="http://yoursite.com/2015/09/21/git 命令/"></div>
+		<!-- 多说评论框 end -->
+		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+		<script type="text/javascript">
+		var duoshuoQuery = {short_name:"zhwios"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] 
+			 || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+		<!-- 多说公共JS代码 end -->
+	</section>
+	
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
   
-  <div class="widgets-container">
-    
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/Objective-C-基础/">Objective-C 基础</a><small>1</small></li>
+  
+    <li><a href="/categories/iOS开发/">iOS开发</a><small>1</small></li>
+  
+    <li><a href="/categories/励志/">励志</a><small>1</small></li>
+  
+    <li><a href="/categories/命令/">命令</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/Object-C/" style="font-size: 10px;">Object-C</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/iOS/" style="font-size: 10px;">iOS</a> <a href="/tags/励志/" style="font-size: 10px;">励志</a>
   </div>
+</div>
+
+
+  
+<div class="widget tag">
+<h3 class="title">时间线</h3>
+<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">2015年09月 </a><span class="archive-list-count">5</span></li></ul>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">我的脚印</h3>
+<ul class="entry">
+<li><a href="http://www.devtang.com" title=" 唐巧技术博客" target="_blank">唐巧技术博客</a></li>
+<li><a href="http://blog.csdn.net/v_JULY_v" title="结构之法 算法之道" target="_blank">结构之法 算法之道</a></li>
+</ul>
+</div>
+
 </aside>
-        </div>
-      </div>
-    </div>
-    <footer id="footer">
-  
-  <div class="container">
-    <div class="container-inner">
-      <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
-      <div class="credit">
-        <h1 class="logo-wrap">
-          <a href="/" class="logo"></a>
-        </h1>
-        <p>&copy; 2015 朱洪伟</p>
-        <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
-      </div>
-    </div>
+    <div class="clearfix"></div>
   </div>
+  <footer id="footer"><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> 欢迎来到 “钰雪” 技术博客. <br/>
+			人必其自爱也,而后人爱诸;人必其自敬也,而后人敬诸</p>
+	</section>
+	 
+	<div class="social-font clearfix">
+		
+		<a href="http://weibo.com/朱洪伟_" target="_blank" title="weibo"></a>
+		
+		
+		
+		<a href="https://github.com/YuXueBJ" target="_blank" title="github"></a>
+		
+		
+		
+		
+		<a href="mailto:zhwios@126.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">© 2015
+		
+		<a href="http://yoursite.com/about" target="_blank" title="朱洪伟">朱洪伟</a>
+           <a>技术博客</a>
+		
+		</p>
+</div>
 </footer>
-    
-
-
-  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-
-
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/counter.js"></script>
 
 
 
 
-<script src="/js/html-patch.js" type="text/javascript"></script>
-<script src="/js/script.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
 
-  </div>
+<div id="totop" style="position:fixed;bottom:100px;right:10px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </body>
 </html>
+
+
