@@ -15,7 +15,7 @@
 	})();
 	</script>
   
-  <title>关于 | 钰雪博客</title>
+  <title>UITableView 删除委托方法 | 钰雪博客</title>
   <meta name="author" content="朱洪伟">
   
   <meta name="description" content="钰雪研发技术博客">
@@ -23,7 +23,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="关于"/>
+  <meta property="og:title" content="UITableView 删除委托方法"/>
   <meta property="og:site_name" content="钰雪博客"/>
 
   
@@ -65,33 +65,89 @@
 </div>
 </header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="page">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
   
   <div class="post-content">
     <header class="article-info clearfix">
   <h1 itemprop="name">
-	关于
+	UITableView 删除委托方法
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="朱洪伟">朱洪伟</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-09-20T06:30:13.000Z" itemprop="datePublished">2015年09月20</time>
-    更新日期:<time datetime="2015-09-21T04:06:12.000Z" itemprop="dateModified">2015年09月21</time>
+    <time datetime="2015-10-09T04:25:40.000Z" itemprop="datePublished">2015年10月09</time>
+    更新日期:<time datetime="2015-10-09T04:28:06.000Z" itemprop="dateModified">2015年10月09</time>
     
   </p>
 </header>
     <div class="entry">
 		
-        <p>钰雪博客园</p>
-<p>专注于 iOS 软件技术开发博客!</p>
-<p>邮箱: zhwios@126.com</p>
+			<div id="toc" class="toc-article">
+				<strong class="toc-title">文章目录</strong>
+				
+			</div>
+		
+        <pre><code>- (<span class="keyword">void</span>)tableView:(<span class="built_in">UITableView</span> *)tableView commitEditingStyle:(<span class="built_in">UITableViewCellEditingStyle</span>)editingStyle forRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath
+{
+    <span class="built_in">NSLog</span>(<span class="string">@"点击了删除"</span>);
+    <span class="keyword">if</span> (editingStyle == <span class="built_in">UITableViewCellEditingStyleDelete</span>) {
+<span class="comment">//        [self.infoItems removeObjectAtIndex:(indexPath.row*2)];</span>
+<span class="comment">//        [self.infoItems removeObjectAtIndex:(indexPath.row*2)];</span>
+<span class="comment">//        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];</span>
+    }
+    <span class="keyword">else</span> <span class="keyword">if</span> (editingStyle == <span class="built_in">UITableViewCellEditingStyleInsert</span>) {
+        <span class="comment">// Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view</span>
+    }
+}
+-(<span class="built_in">UITableViewCellEditingStyle</span>)tableView:(<span class="built_in">UITableView</span> *)tableView editingStyleForRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath
+{
+    <span class="built_in">NSLog</span>(<span class="string">@"手指滑动了"</span>);
+    <span class="keyword">return</span> <span class="built_in">UITableViewCellEditingStyleDelete</span>;
+}
+-(<span class="built_in">NSString</span> *)tableView:(<span class="built_in">UITableView</span> *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath
+{
+    <span class="keyword">return</span>  <span class="string">@"删除"</span>;
+}
 
+-(<span class="built_in">BOOL</span>)tableView:(<span class="built_in">UITableView</span> *)tableView canEditRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath
+{
+    <span class="keyword">return</span> <span class="literal">YES</span>;
+}
+- (<span class="built_in">BOOL</span>)tableView:(<span class="built_in">UITableView</span> *)tableView canMoveRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath {
+    <span class="keyword">return</span> <span class="literal">YES</span>;
+}
+- (<span class="keyword">void</span>)tableView:(<span class="built_in">UITableView</span> *)tableView moveRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)fromIndexPath toIndexPath:(<span class="built_in">NSIndexPath</span> *)toIndexPath {
+
+}
+</code></pre>
     </div>
     <footer>
         
+  
+  <div class="categories">
+    <a href="/categories/iPhone开发/">iPhone开发</a>
+  </div>
+
         
+  
+  <div class="tags">
+    <a href="/tags/iPhone开发/">iPhone开发</a>
+  </div>
+
 		<div class="bdsharebuttonbox">
 	<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
 	<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
@@ -138,6 +194,8 @@ with(document)0[
  <nav id="pagination" >
     
     
+    <a href="/2015/09/21/无论你工资多少，请记住这些/" class="alignright next" title="无论你工资多少，请记住这些">无论你工资多少，请记住这些</a>
+    
     <div class="clearfix"></div>
 </nav>
 
@@ -146,7 +204,7 @@ with(document)0[
 	
 	<section id="comment">
 		<!-- 多说评论框 start -->
-		<div class="ds-thread" data-thread-key="about/index.html" data-title="关于" data-url="http://yoursite.com/about/index.html"></div>
+		<div class="ds-thread" data-thread-key="2015/10/09/UITableView-删除委托方法/" data-title="UITableView 删除委托方法" data-url="http://yoursite.com/2015/10/09/UITableView-删除委托方法/"></div>
 		<!-- 多说评论框 end -->
 		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 		<script type="text/javascript">
