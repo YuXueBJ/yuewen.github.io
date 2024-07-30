@@ -4,10 +4,21 @@
         <title>钰雪博客 Blog</title>
         <link>https://github.com/blog</link>
         <description>钰雪博客 Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 29 Jul 2024 07:44:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[人生三大问题]]></title>
+            <link>https://github.com/blog/人生三大问题</link>
+            <guid>https://github.com/blog/人生三大问题</guid>
+            <pubDate>Mon, 29 Jul 2024 07:44:50 GMT</pubDate>
+            <description><![CDATA[最近看到一篇文章，很有意思，分享给大家]]></description>
+            <content:encoded><![CDATA[<p>最近看到一篇文章，很有意思，分享给大家</p>
+<p>大意是：人的一生就是解决三个基本问题：事业，家庭，财务</p>
+<p>成就自己的事业，一个幸福的家庭，一个健康的财务状况，人生就没遗憾了。</p>
+<p><a href="https://huyenchip.com/2024/04/17/personal-growth.html" target="_blank" rel="noopener noreferrer">https://huyenchip.com/2024/04/17/personal-growth.html</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://github.com/blog/welcome</link>
